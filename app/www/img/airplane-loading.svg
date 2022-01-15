@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg7"
+   sodipodi:docname="airplane-loading.svg"
+   width="200"
+   height="200"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs11" />
+  <sodipodi:namedview
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview9"
+     showgrid="false"
+     inkscape:pagecheckerboard="false"
+     inkscape:zoom="1.1739077"
+     inkscape:cx="377.43519"
+     inkscape:cy="51.936951"
+     inkscape:window-x="1072"
+     inkscape:window-y="593"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7"
+     inkscape:document-rotation="0" />
+  <path
+     d="m 116.60413,30.167361 a 2.8009231,2.8009231 0 0 0 -2.7607,-3.268964 l -7.88842,7.3e-5 -7.276537,-13.340741 a 1.2558793,1.2558793 0 0 0 -1.10288,-0.654694 l -2.274525,-1.36e-4 a 1.2564458,1.2564458 0 0 0 -1.2276,1.524163 l 2.721155,12.471335 -1.385965,6.4e-5 a 20.87209,20.87209 0 0 0 -3.65893,0.332657 l -4.69098,-5.811347 a 1.2625013,1.2625013 0 0 0 -0.98237,-0.469287 l -1.45542,-1.16e-4 a 1.262391,1.262391 0 0 0 -1.23335,1.531416 l 1.57456,7.215677 -1.57686,7.226533 a 1.2533776,1.2533776 0 0 0 1.22451,1.52063 l 1.47089,-4.7e-5 a 1.2535689,1.2535689 0 0 0 0.97532,-0.466207 l 4.69378,-5.814457 a 20.85953,20.85953 0 0 0 3.65891,0.332511 l 1.385835,5.6e-5 -2.718225,12.45873 a 1.2668204,1.2668204 0 0 0 1.2376,1.536862 l 2.255435,-7.2e-5 a 1.266894,1.266894 0 0 0 1.11216,-0.660252 l 7.273497,-13.335143 7.73878,-5.6e-5 c 1.3944,-6.4e-5 2.68655,-0.952879 2.91033,-2.329188 z"
+     id="path4"
+     style="fill:#2e85c7;fill-opacity:1;stroke-width:1.86639;stroke-miterlimit:4;stroke-dasharray:none" />
+</svg>

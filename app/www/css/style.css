@@ -1,0 +1,255 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+html {
+  overflow: hidden;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+  color: #000;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+:focus {
+  outline: 0;
+}
+
+:root {
+  --notch-inset-top: constant(safe-area-inset-top);
+  --notch-inset-top: env(safe-area-inset-top, 0px);
+  --notch-inset-right: constant(safe-area-inset-right);
+  --notch-inset-right: env(safe-area-inset-right, 0px);
+  --notch-inset-bottom: constant(safe-area-inset-bottom);
+  --notch-inset-bottom: env(safe-area-inset-bottom, 0px);
+  --notch-inset-left: constant(safe-area-inset-left);
+  --notch-inset-left: env(safe-area-inset-left, 0px);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+div {
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+body  {
+  font-family: 'Roboto',Arial;
+  width: 100%;
+  background: #fff;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+input, textarea, select, button {
+  font-family: 'Roboto' !important;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Portrait layout (default) */
+.app {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#header {
+  padding-top: var(--notch-inset-top);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 0;
+  height: calc(var(--notch-inset-top) + 55px);
+  width: 100%;
+  box-shadow: 0 0 10px #00000026;
+  z-index: 999;
+  display: block;
+}
+
+#header #company-logo {
+  width: 80px;
+  position: absolute;
+  left: 50%;
+  top: auto;
+  margin-left: -40px;
+  display: block;
+}
+
+#header #company-icon {
+  width: 30px;
+  position: absolute;
+  left: auto;
+  top: 50%;
+  padding: 15px 10px;
+  margin-top: -30px;
+  display: none;
+}
+
+#allow-screen-recording {
+  display: none;
+  width: 100%;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding: 30px;
+  color: #999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 95;
+  transition: all linear 0.2s;
+}
+
+#allow-screen-recording-error {
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+#main-panel {
+  top: calc(var(--notch-inset-top) + 75px);
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+#toggle-recording {
+  padding: 10px;
+  background: #2e85c7;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 24px;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#toggle-recording:active {
+  opacity: 0.4;
+}
+
+#toggle-recording.recording {
+  background: #26a65b;
+}
+
+#loading {
+  opacity: 0;
+  display: block;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  left: calc(50% - 75px);
+  top: calc(50% - 75px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 0 20px rgb(0 0 0 / 30%);
+  -moz-box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  z-index: 996;
+  margin-top: 20px;
+  border-radius: 75px;
+  background: #ffffff0d;
+  transition: all linear 0.5s;
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+#loading div {
+  display: block;
+  height: 150px;
+  width: 150px;
+  background: url(../img/airplane-loading.svg);
+  -webkit-animation: spinner 3s linear infinite;
+  -moz-animation: spinner 3s linear infinite;
+  -ms-animation: spinner 3s linear infinite;
+  -o-animation: spinner 3s linear infinite;
+  animation: spinner 3s linear infinite;
+  background-size: 150px;
+}
+
+@-webkit-keyframes spinner {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-moz-keyframes spinner {
+  0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-o-keyframes spinner {
+  0% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); transform: rotate(0deg); }
+  100% { transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+/* Landscape layout */
+@media screen and (min-aspect-ratio: 1/1) {
+  #header {
+    padding-left: var(--notch-inset-left);
+    left: 0;
+    width: calc(var(--notch-inset-left) + 55px);
+    height: 100vh;
+  }
+
+  #header #company-logo {
+    display: none;
+  }
+
+  #header #company-icon {
+    display: block;
+  }
+
+  #main-panel {
+    top: calc(var(--notch-inset-top) + 15px);
+    left: calc(var(--notch-inset-left) + 75px);
+    right: calc(var(--notch-inset-right) + 15px);
+  }
+}
+
+/* Dark color scheme */
+@media screen and (prefers-color-scheme: dark) {
+    body {
+
+    }
+}
