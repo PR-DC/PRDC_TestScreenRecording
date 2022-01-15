@@ -72,7 +72,7 @@ function onDeviceReady() {
             title: 'TestScreenRecording',
             text: 'Screen recording active...'
           }, 
-          'herelink_' + ('0' + d.getDate()).slice(-2)
+          'TSR_' + ('0' + d.getDate()).slice(-2)
             + ('0' + (d.getMonth() + 1)).slice(-2)
             + d.getFullYear()+ '_' + ('0' + d.getHours()).slice(-2)
             + ('0' + d.getMinutes()).slice(-2)
